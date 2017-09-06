@@ -21,7 +21,6 @@
             <a class="navbar-logo" href="{{ url('/') }}">
                 <strong>OG</strong>Checkr
             </a>
-
             <!-- Right Side Of Navbar -->
             <div class="navigation">
                 <!-- Authentication Links -->

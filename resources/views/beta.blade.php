@@ -1,16 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-@if (session('status'))
-    <div class="alert alert-success">
-        {{ session('status') }}
-    </div>
-@endif
 <div class="form-container">
-  <form id="contact" action="{{ route('password.email') }}" method="post">
+  <form id="contact" action="{{ route('join-beta') }}" method="post">
     {{ csrf_field() }}
-    <h3>Reset Password</h3>
-    <h4>Enter your email address to be emailed a link to change your password.</h4>
+    <h3>Join the beta!</h3>
+    <h4>Tell us your email in order to be notified when the beta is available.</h4>
     <fieldset>
       <input id="email" type="email" placeholder="Email Address" tabindex="1" name="email" value="{{ old('email') }}" required autofocus>
         @if ($errors->has('email'))

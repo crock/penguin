@@ -2,6 +2,6 @@
 
 @section('content')
 <div class="container">
-    this is content.
+    this is home.
 </div>
 @endsection
