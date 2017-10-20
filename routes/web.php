@@ -20,3 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/beta', 'Auth\BetaController@beta')->name('beta');
 Route::post('/join-beta', 'Auth\BetaController@requestInvite')->name('join-beta');
+
+Route::group(['prefix' => 'check'], function () {
+    Route::get('{service}/{word}', ['uses' => 'ParseController@parse', 'as' => 'check']);
+});
