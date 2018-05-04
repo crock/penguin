@@ -7,7 +7,17 @@
 
 require('./bootstrap');
 
+// import fontawesome from '@fortawesome/fontawesome';
+// import solid from '@fortawesome/fontawesome-pro-solid';
+// import brands from '@fortawesome/fontawesome-free-brands';
+
+// fontawesome.library.add(solid);
+// fontawesome.library.add(brands);
+
 window.Vue = require('vue');
+
+// const FontAwesomeIcon = require('@fortawesome/vue-fontawesome');
+// Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

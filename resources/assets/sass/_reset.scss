@@ -2,13 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+}
+
+html {
+	min-height: 100%;
 }
 
 body {
@@ -18,6 +15,12 @@ body {
 
 .container {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
-    position: relative;
+}
+
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+	.container {
+		width: 90%;
+	}
 }

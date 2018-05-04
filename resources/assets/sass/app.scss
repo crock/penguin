@@ -1,13 +1,29 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,600,700,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
+
+@font-face {
+	font-family: "Caviar Dreams";
+  	src: url("/webfonts/Caviar_Dreams_Bold.ttf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
 
 // Variables
 @import "variables";
+
+// Font Awesome
+@import "fa/fontawesome";
+@import "fa/fa-solid";
+@import "fa/fa-brands";
 
 // Reset
 @import "reset";
 
 // Partials
-@import "partials/nav";
+@import "partials/header";
+@import "partials/feature-sections";
+@import "partials/testimonial-blurb";
+@import "partials/social-blurb";
 @import "partials/forms";
+@import "partials/footer";
