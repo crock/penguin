@@ -4,6 +4,7 @@
 <div class="blurb">
     <div class="container">
         <p>Penguin is the ultimate app for finding the perfect brand name for your upcoming business or startup. It can check dozens of social media services and the most popular domain extensions all at once.</p>
+        <img class="device-frame" src="{{ asset('/img/iPhone.png') }}" alt="iPhone X device frame with screenshot of app inside">
     </div>
 </div>
 

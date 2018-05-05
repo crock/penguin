@@ -4863,6 +4863,16 @@ h2 {
           transform: translatey(-50%);
 }
 
+.blurb .container img {
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+}
+
 @media only screen and (max-width: 768px) {
   .blurb {
     text-align: center;
@@ -4870,6 +4880,10 @@ h2 {
 
   .blurb .container p {
     width: 100%;
+  }
+
+  .blurb .container img {
+    display: none;
   }
 }
 
@@ -4955,6 +4969,7 @@ section .container .row .column {
 
 section .container .row .column i {
   padding: 0 10px;
+  color: #d8d8d8;
 }
 
 section .container .row .column .feature-text .feature-title {

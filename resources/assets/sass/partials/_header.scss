@@ -20,6 +20,15 @@ h2 { color: #909090; font-size: 24px; font-weight: 400; margin-bottom: 50px; }
 			top: 50%;
 			transform: translatey(-50%);
 		}
+
+		img {
+			width: 300px;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translatey(-50%);
+		}
 	}
 }
 
@@ -30,6 +39,10 @@ h2 { color: #909090; font-size: 24px; font-weight: 400; margin-bottom: 50px; }
 		.container {
 			p {
 				width: 100%;
+			}
+
+			img {
+				display: none;
 			}
 		}
 	}
