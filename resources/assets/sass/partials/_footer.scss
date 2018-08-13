@@ -6,13 +6,13 @@ footer {
 	.container {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: flex-start;
+		justify-content: center;
 		align-content: center;
 		
 		.row {
 			display: flex;
 			flex-flow: row wrap;
-			justify-content: flex-start;
+			justify-content: space-around;
 			align-items: center;
 			
 			.column {
@@ -20,7 +20,8 @@ footer {
 				height: 150px;
 				display: flex;
 				flex-direction: column;
-				margin-right: 50px;
+				text-align: center;
+				//margin-right: 50px;
 				
 				h5 {
 					font-weight: bold;

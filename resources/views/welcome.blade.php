@@ -4,14 +4,11 @@
 <div class="blurb">
     <div class="container">
         <p>Penguin is the ultimate app for finding the perfect brand name for your upcoming business or startup. It can check dozens of social media services and the most popular domain extensions all at once.</p>
+        <div class="downloads">
+            <img class="app-icon" src="{{ asset('/img/app_icon.png') }}" alt="App Icon" width="60" height="60">
+            <a href="#"><img src="{{ asset('/img/ComingSoonBadge_WHT.svg') }}" alt="Download on the App Store today!"></a>
+        </div>
         <img class="device-frame" src="{{ asset('/img/iPhone.png') }}" alt="iPhone X device frame with screenshot of app inside">
-    </div>
-</div>
-
-<div class="downloads-blurb">
-    <div class="container">
-        <img class="app-icon" src="{{ asset('/img/app_icon.png') }}" alt="App Icon" width="60" height="60">
-        <a href="#"><img src="{{ asset('/img/ComingSoonBadge_BLK.svg') }}" alt="Download on the App Store today!"></a>
     </div>
 </div>
 
@@ -49,42 +46,6 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<div class="testimonials-blurb">
-    <div class="container">
-        <div class="row">
-            <div class="column">
-                <p class="quote">
-                    “Croc is very dedicated to his program, always focusing on ways to improve it and listening to users' feedback.”
-                </p>
-                <div class="author-info">
-                    <img src="http://placehold.it/50x50" alt="author photo">
-                    <div class="author">
-                        <span class="name">Jack</span>,&nbsp;
-                        <span class="from">MCM</span>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <p class="quote">
-                    “Best username checker out here for free, quite easy to set up and use, also really great support.”
-                </p>
-                <div class="author-info">
-                    <img src="http://placehold.it/50x50" alt="author photo">
-                    <div class="author">
-                        <span class="name">Space</span>,&nbsp;
-                        <span class="fromSite">MCM</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<section>
-    <div class="container">
         <div class="row">
             <div class="column">
                 <i class="fas fa-th fa-2x"></i>
@@ -131,15 +92,15 @@
             <div class="column">
                 <h5>Need Support?</h5>
                 <ul>
-                    <li><a href="">Community Forum</a></li>
-                    <li><a href="">Discord Server</a></li>
+                    <li><a href="{{ route('forum') }}">Community Forum</a></li>
+                    <li><a href="{{ route('discord') }}">Discord Server</a></li>
                 </ul>
             </div>
             <div class="column">
                 <h5>Helpful Links</h5>
                 <ul>
-                    <li><a href="">API Documentation</a></li>
-                    <li><a href="">Bug Tracker</a></li>
+                    <li><a href="{{ route('api-docs') }}">API Documentation</a></li>
+                    <li><a href="{{ route('github-issues') }}">Bug Tracker</a></li>
                     <li><a href="">Release Notes</a></li>
                 </ul>
             </div>

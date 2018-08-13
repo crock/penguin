@@ -9,6 +9,10 @@ h2 { color: #909090; font-size: 24px; font-weight: 400; margin-bottom: 50px; }
 	
 	.container {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-content: flex-start;
 		
 		p {
 			width: 50%;
@@ -17,17 +21,34 @@ h2 { color: #909090; font-size: 24px; font-weight: 400; margin-bottom: 50px; }
 			font-weight: 300;
 			font-size: 18px;
 			position: relative;
-			top: 50%;
-			transform: translatey(-50%);
+			//top: 50%;
+			//transform: translatey(-50%);
 		}
 
-		img {
+		img.device-frame {
 			width: 300px;
 			height: auto;
 			position: absolute;
 			top: 50%;
 			right: 0;
 			transform: translatey(-50%);
+		}
+
+		.downloads {
+			margin-top: 25px;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-content: center;
+			align-items: center;
+			
+			.app-icon {
+				border-radius: 13.3px;
+			}
+			
+			a {
+				margin-left: 25px;
+			}
 		}
 	}
 }
@@ -41,8 +62,12 @@ h2 { color: #909090; font-size: 24px; font-weight: 400; margin-bottom: 50px; }
 				width: 100%;
 			}
 
-			img {
+			img.device-frame {
 				display: none;
+			}
+
+			.downloads {
+				justify-content: center;
 			}
 		}
 	}

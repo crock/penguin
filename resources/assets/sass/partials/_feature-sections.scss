@@ -1,4 +1,5 @@
 section {
+	margin: 50px 0;
 	
 	.container {
 		display: flex;
@@ -15,15 +16,16 @@ section {
 			
 			.column {
 				width: 50%;
-				padding: 10px;
 				display: flex;
 				flex-flow: row nowrap;
 				justify-content: space-between;
 				align-content: flex-start;
+                padding: 25px;
 				
 				i {
 					padding: 0 10px;
 					color: #d8d8d8;
+                    margin-top: 5px;
 				}
 				
 				.feature-text {
@@ -75,8 +77,6 @@ section {
 				
 				.column {
 					width: 100%;
-					padding: 0;
-					margin-bottom: 25px;
 				}
 			}
 		}
