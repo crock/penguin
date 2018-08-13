@@ -16,19 +16,19 @@ Route::get('/', function () {
 });
 
 Route::get('/forum', function() {
-    return header("Location: https://penguin.market/");
+    return redirect('https://penguin.market/');
 })->name('forum');
 
 Route::get('/discord', function() {
-    return header("Location: https://discord.gg/VFukZqq");
+    return redirect('https://discord.gg/VFukZqq');
 })->name('discord');
 
 Route::get('/issues', function() {
-    return header("Location: https://github.com/crock/penguin-issues/issues");
+    return redirect('https://github.com/crock/penguin-issues/issues');
 })->name('github-issues');
 
 Route::get('/docs', function() {
-    return header("Location: https://api.getpenguin.com/");
+    return redirect('https://api.getpenguin.com/');
 })->name('api-docs');
 
 Auth::routes();
